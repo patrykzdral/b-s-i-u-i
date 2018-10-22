@@ -36,7 +36,7 @@ class CaesarCipher {
                     chara -= 27;
                 }
                 //char ch = (char) (((int) negatedChar - key - 65) % 26 + 65);
-                result.append((char)chara);
+                result.append((char) chara);
             } else if (Character.isLowerCase(negatedChar)) {
                 int chara = negatedChar - key;
                 if (chara < 97) {
@@ -45,7 +45,7 @@ class CaesarCipher {
                     chara -= 27;
                 }
                 //char ch = (char) (((int) negatedChar - key - 97) % 26 + 97);
-                result.append((char)chara);
+                result.append((char) chara);
             } else {
                 char ch = (char) (((int) text.charAt(i)));
                 result.append(ch);

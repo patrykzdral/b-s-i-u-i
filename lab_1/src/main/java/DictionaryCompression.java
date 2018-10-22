@@ -21,7 +21,7 @@ class DictionaryCompression {
         var tempBuilder = new StringBuilder();
         tempBuilder.append(firstBits);
         convertedText.append((char) x);
-        convertedText.append(distinctCharsList.toString().substring(1, 3*distinctCharsList.size()-1).replaceAll(", ", ""));
+        convertedText.append(distinctCharsList.toString().substring(1, 3 * distinctCharsList.size() - 1).replaceAll(", ", ""));
         chars.forEach(character -> {
             var characterInBits = dictionary.get(character);
             tempBuilder.append(characterInBits);
